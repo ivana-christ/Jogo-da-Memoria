@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória</title>
+  <style>
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+  
+      .coluna {
+        justify-content: center;
+        display: flex;
+      }
+  
+      .clicado {
+        opacity: 0.5;
+      }
+  
+      .correspondente {
+        opacity: 1;
+      }
+  
+      .message-container {
+        font-family: 'Rubik';
+        position: fixed;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        max-width: 840px;
+        height: 500px;
+        padding: 10px;
+        background-color: #700252;
+        text-align: center;
+        border-radius: 20px;
+        padding-top: 30px;
+        z-index: 99;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+      }
+  
+      .message-container p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #fc854c;
+        text-align: center;
+      }
+  
+      .message-container span {
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+        text-align: center;
+      }
+  
+      .additional-textWin {
+        display: inline-block;
+        font-size: 20px;
+        width: 70%;
+      }
+  
+      .additional-textLose {
+        display: inline-block;
+        font-size: 20px;
+        width: 75%;
+      }
+  
+      .link-button {
+        font-size: 20px;
+        font-weight: 500;
+        color: #700252;
+        font-family: 'Rubik';
+        background-color: #ff864b;
+        padding: 25px 20px 25px 20px;
+        border-radius: 60px;
+        top: 85%;
+        width: 530px;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+      }
+  
+      .link-closeButton {
+        position: fixed;
+        top: 15px;
+        right: 30px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #ff864b;
+        text-decoration: none;
+        font-family: 'Rubik';
+      }
+  
+      .imagem {
+        width: 100%;
+        max-width: 220px;
+        max-height: 270px;
+        margin: 3px;
+      }
+  
+      @media screen and (max-width: 480px) {
+        .content {
+          width: 100%;
+          height: auto;
+        }
+
+        .message-container {
+          width: 300px;
+          height: 480px
+        }
+
+        .link-button{
+          width: 280px;
+          margin-top: 28px;
+          font-size: 17px;
+          padding: 10px 10px 10px 10px;
+        }
+
+        .additional-textWin {
+          width: auto;
+        }
+
+        .additional-textLose {
+          width: auto;
+        }
+
+        .message-container p {
+          font-size: 24px;
+          line-height: 32px;
+        }
+
+        .imgAlert {
+          width: 200px;
+        }
+  
+        .imagem{
+          width: 55px !important;
+          max-width: 55px !important;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="coluna">
+        <img class="imagem" id="1" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_1.png">
+        <img class="imagem" id="2" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_2.png">
+        <img class="imagem" id="3" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_3.png">
+        <img class="imagem" id="4" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_4.png">
+        <img class="imagem" id="5" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_5.png">
+      </div>
+      <div class="coluna">
+        <img class="imagem" id="6" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_6.png">
+        <img class="imagem" id="7" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_7.png">
+        <img class="imagem" id="8" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_8.png">
+        <img class="imagem" id="9" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_9.png">
+        <img class="imagem" id="10" src="https://promo.gympass.com/wp-content/uploads/2023/05/freente_10.png">
+      </div>
+    </div>
+    <script src="jogo_memoria.js"></script>
+  </body>
+</html>
