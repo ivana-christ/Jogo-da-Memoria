@@ -72,7 +72,7 @@ function clicouImagem(imagem) {
       const messageText = document.createElement("p");
       messageText.textContent = "Parabéns, sua memória é ótima!";
       const additionalText = document.createElement("span");
-      additionalText.textContent = "Lembre-se: para concorrer aos prêmios, você precisa ter preenchido o formulário e ter o cadastro gratuito no Gympass.";
+      additionalText.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem, quae fugit sed tempore!";
       additionalText.classList.add("additional-textWin")
       const additionalText2 = document.createElement("span");
       additionalText2.textContent = "Ainda não tem cadastro? Clique abaixo.";
@@ -82,7 +82,7 @@ function clicouImagem(imagem) {
       const lineBreak2 = document.createElement("br");
       const linkButton = document.createElement("a");
       linkButton.textContent = "Clique aqui para se cadastrar";
-      linkButton.href = "https://site.gympass.com/br/";
+      linkButton.href = "";
       linkButton.target = "_blank";
       linkButton.classList.add("link-button");
       const linkCloseButton = document.createElement("a");
@@ -120,7 +120,7 @@ function clicouImagem(imagem) {
         const messageText = document.createElement("p");
         messageText.textContent = "Foi por pouco, não desanime!";
         const additionalText = document.createElement("span");
-        additionalText.textContent = "Pela participação você pode concorrer aos prêmios. Para isso, preencha o formulário e faça o seu cadastro gratuito no Gympass.";
+        additionalText.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem, quae fugit sed tempore!";
         additionalText.classList.add("additional-textLose")
         const additionalText2 = document.createElement("span");
         additionalText2.textContent = "Ainda não tem cadastro? Clique abaixo.";
@@ -130,7 +130,7 @@ function clicouImagem(imagem) {
         const lineBreak2 = document.createElement("br");
         const linkButton = document.createElement("a");
         linkButton.textContent = "Clique aqui para se cadastrar";
-        linkButton.href = "https://site.gympass.com/br/";
+        linkButton.href = "";
         linkButton.target = "_blank";
         linkButton.classList.add("link-button");
         const linkCloseButton = document.createElement("a");
