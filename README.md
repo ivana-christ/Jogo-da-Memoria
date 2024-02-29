@@ -10,6 +10,3 @@ Este é um jogo da memória simples desenvolvido em HTML, CSS e JavaScript. O ob
 5. Se as duas cartas forem diferentes, elas serão viradas novamente após um breve período de tempo.
 6. Final do Jogo: Continue encontrando pares até que todas as cartas sejam reveladas.
 7. Vitória: Você vence o jogo quando encontrar todos os pares de cartas idênticas.
-
-# Demonstração
-Você pode experimentar o jogo da memória online <a href="" target="blank">aqui</a>.
